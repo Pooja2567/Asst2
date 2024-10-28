@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{   
+        width: 550px;
+        height: 750px;
+        background-image: url("nature.jpg");
+        color:white;
+    }
+    .b{
+        border:1px solid black;
+        width: 300px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    input[type="text"],textarea,input[type="date"],input[type=number],select{
+        width: 90%;
+        height: 35px;
+        margin-left: 20px;
+        border-radius: 30px;
+        margin-bottom: 35px;
+        
+    }
+    .c{
+        text-align: center;
+    }
+    button{
+        width: 50%;
+        height: 30px;
+        margin-left: 110px;
+        margin-top: 30px;
+        background-color: rgb(23, 197, 236);
+        border-radius: 50px;
+    }
+</style>
+<script>
+   
+    function submitform(){
+       window.alert(document.getElementById("appl").innerHTML="submitted successfully");
+    }
+
+</script>
+<body>
+    <form class="a">
+        <h2 class="c">LEAVE FORM</h2>
+        <label for="firstname">FIRST NAME</label>
+        <input  class="b"  type="text"><br>
+        <label for="secondname">SECOND NAME</label>
+        <input class="b" type="text"><br>
+        <label for="rollnum">ROLLNUM </label>
+        <input class="b" type="number"><br>
+        <label for="branch">BRANCH </label>
+       <select name="" id="">
+        <option>--Choose--</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>MECH</option>
+        <option>CIVIL</option>
+        <option>DIPLOMA COURSE</option>
+       </select>
+        <label for="specialization">SPECIALIZATION</label>
+       <select name="" id="">
+        <option>--Choose--</option>
+        <option>AI</option>
+        <option>CS</option>
+        <option>GEN</option>
+        
+       </select>
+        <label for="fromdate">FROM DATE</label>
+        <input class="b" type="date"><br>
+        <label for="todate">TO DATE</label>
+        <input class="b" type="date"><br>
+        <button id="appl" type="button" onclick="submitform()">submit</button>
+
+    </form>
+</body>
+</html>
